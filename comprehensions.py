@@ -69,3 +69,15 @@ print(dict(date_and_wave_height(data)))
 
 print("\n###Part 6 - Create a dictionary with the average wave height for each day\n")
 
+print("Sorry I didn't understand the requirement I'll resubmit at a later date")
+
+print("\n###Part 7 - Create a nested comprehension to get the average of the Homework 1 grades.\n")
+
+d = {'Gale': {'Homework 1': 88, 'Homework 2': 76}, 'Jordan': {'Homework 1': 92, 'Homework 2': 87}, 'Peyton': {'Homework 1': 84, 'Homework 2': 77}, 'River': {'Homework 1': 85, 'Homework 2': 91}}
+
+from statistics import mean
+def homework_vals(d):
+    return[(d[something]['Homework 1']) for something in d]
+
+print(d)
+print("The mean of Homework 1 is..." + str(mean(homework_vals(d))))
